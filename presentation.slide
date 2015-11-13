@@ -14,28 +14,34 @@ http://github.com/dullgiulio
 
 * Deployment: alerts
 
-- E-mail summarizing the changes that have been deployed
-- PM can get feedback of progress immediately
+E-mail summarizing the changes that have been deployed
+
+PM can get feedback of progress immediately
 
 
 * Deployment: DB migrations improved
 
-- Deployment is fully automatic
-- No mistakes with many stages (dev, UAT...)
-- ~400 migrations run so far 
+Deployment is fully automatic
+
+No mistakes with many stages (dev, UAT...)
+
+~400 migrations run so far 
 
 
 * Deployment: other changes
 
-- Log with all deployment actions for future analysis
-- To be used later...
+Log with all deployment actions for future analysis
+
+To be used later...
 
 
 * Deployment: Dev is deployable
 
-- Dev is used for testing
-- UAT is finally used for User Acceptance
-- Seems easy, but needed two major changes...
+Dev is used for testing
+
+UAT is finally used for User Acceptance
+
+Seems easy, but needed two major changes...
 
 
 * Workspaces
@@ -44,20 +50,23 @@ http://github.com/dullgiulio
 
 * Workspaces
 
-- Every developer has a private workspace
-- Everything is still on the shared dev server
+Every developer has a private workspace
+
+Everything is still on the shared dev server
 
 
 * Workspaces: why?
 
-- Can work on different topics on the same products
-- Can try out changes during core review
+Can work on different topics on the same products
+
+Can try out changes during core review
 
 
 * Workspaces: how?
 
-- Seems simple but implementation is very clever
-- To get around TYPO3 limitations
+Seems simple but implementation is very clever
+
+To get around TYPO3 limitations
 
 
 * Git
@@ -66,29 +75,33 @@ http://github.com/dullgiulio
 
 * Git
 
-- Much faster than SVN; almost zero turnarond while developing
-- Saner development model where changes are contained
+Much faster than SVN; almost zero turnarond while developing
+
+Saner development model where changes are contained
 
 
 * Git
 
-- Changes can have much better documentation
+Changes can have much better documentation
 
-.link http://git.int.kn/projects/GIMPS/repos/portal/commits/7d459db17edf8efa6eea8c4e8637a591ddc7a8a9 Before
-.link http://git.int.kn/projects/GIMPS/repos/portal/commits/f6b649154eb4793199c6f36a525875d7158748e8 After
+.link http://git.int.kn/projects/GIMPS/repos/portal/commits/7d459db17edf8efa6eea8c4e8637a591ddc7a8a9 What changed here?
+.link http://git.int.kn/projects/GIMPS/repos/portal/commits/f6b649154eb4793199c6f36a525875d7158748e8 I know what was done here
 
 
 * Git
 
-- Successful migration
-- No business or development interruption
-- Training (8 participants, 8 hours)
+Successful migration
+
+No business or development interruption
+
+Training (8 participants, 8 hours)
 
 
 * Aside: other trainings
 
-- 2 days, 4 hours training about Web Applications (From Server to Browser) for trainee testers
-- Other shorter trainings about TYPO3 (backend, translations, ...)
+2 days, 4 hours training about Web Applications (From Server to Browser) for trainee testers
+
+Other shorter trainings about TYPO3 (backend, translations, ...)
 
 
 * Code Reviews
@@ -97,16 +110,20 @@ http://github.com/dullgiulio
 
 * Code Reviews
 
-- Made possible by Git
-- Changes are more solid when in testing stage
-- Development is more transparent
+Made possible by Git
+
+Changes are more solid when in testing stage
+
+Development is more transparent
 
 
 * Core Reviews: transparency
 
-- Changes published in progress
-- All design decisions reviewed ASAP
-- Less bad design, time wasted
+Changes published in progress
+
+All design decisions reviewed ASAP
+
+Less bad design, time wasted
 
 
 * Database undo 
@@ -115,21 +132,25 @@ http://github.com/dullgiulio
 
 * Database undo: what?
 
-- Requested by testers for automatic tests
-- Used as intended
+Requested by testers for automatic tests
+
+Used as intended
 
 
 * Database undo: how?
 
-- Freeze the user data
-- Run tests that change the data
-- Revert all changes
+Freeze the user data
+
+Run tests that change the data
+
+Revert all changes
 
 
 * Database undo: use cases
 
-- Fast running of tests on UAT without breaking BU work
-- In the future, can be used to run security tests
+Fast running of tests on UAT without breaking BU work
+
+In the future, can be used to run security tests
 
 
 * KN Portal upgrade
@@ -138,7 +159,7 @@ http://github.com/dullgiulio
 
 * KN Portal upgrade
 
-- Fixed tons of issues after upgrade
+Fixed tons of issues after upgrade
 
 
 * Microsites upgrade
@@ -147,16 +168,20 @@ http://github.com/dullgiulio
 
 * Microsites upgrade
 
-- Again, tons of bugfixes in stabilization phase
-- Helped after first go-live failed
-- Second attempt succeeded
+Again, tons of bugfixes in stabilization phase
+
+Helped after first go-live failed
+
+Second attempt succeeded
 
 
 * Microsites upgrade: make go-live work
 
-- Solved some problems in real time during the go-live
-- Before: optimized some migration operations
-- Before: optimized DB operations (run 10x faster)
+Solved some problems in real time during the go-live
+
+Before: optimized some migration operations
+
+Before: optimized DB operations (run 10x faster)
 
 
 * osat
@@ -165,9 +190,11 @@ http://github.com/dullgiulio
 
 * osat
 
-- Open Source tool wrote in free time
-- Optimizes DB migrations
-- Used successfully for Microsites
+Open Source tool wrote in free time
+
+Optimizes DB migrations
+
+Used successfully for Microsites
 
 .link http://github.com/dullgiulio/osat
 
@@ -178,30 +205,34 @@ http://github.com/dullgiulio
 
 * sys-file-indexer
 
-- Also Open Source at home
+Also Open Source at home
 
 
 * sys-file-indexer: problem
 
-- TYPO3 indexer is damn slow (Extranet: ~40min)
-- How long will it take for KNet? Probably 2 hours
+TYPO3 indexer is damn slow (Extranet: ~40min)
+
+How long will it take for KNet? Probably 2 hours
 
 
 * sys-file-indexer: solution
 
-- An indexer that takes 12 minutes for Extranet
-- Result is cached: at go-live it can take just 1 second
+An indexer that takes 12 minutes for Extranet
 
-- Parallel code in Go
+Result is cached: at go-live it can take just 1 second
+
+Parallel code in Go
 
 .link http://github.com/dullgiulio/sys-file-indexer
 
 
 * sys-file-indexer: next steps
 
-- Can be used for KNet as-is
-- Will need a server to KNet updated
-- TYPO3 doesn't support the way our users upload files
+Can be used for KNet as-is
+
+Will need a server to KNet updated
+
+TYPO3 doesn't support the way our users upload files
 
 
 * perso
@@ -210,10 +241,13 @@ http://github.com/dullgiulio
 
 * perso
 
-- Needed by testers for automated tests of e-mail sending
-- It is used daily
-- Server has been running continuously for 7 months without problems
-- Doesn't need maintenance
+Needed by testers for automated tests of e-mail sending
+
+It is used daily
+
+Server has been running continuously for 7 months without problems
+
+Doesn't need maintenance
 
 .link http://github.com/dullgiulio/perso
 
@@ -224,31 +258,36 @@ http://github.com/dullgiulio
 
 * Future
 
-- Concentrate on KPI
+Concentrate on KPI
 
 
 * Future: KPI
 
-- How long before this can be deployed?
-- Are pages heavy to load?
-- Are there server errors we don't notice?
+How long before this can be deployed?
+
+Are pages heavy to load?
+
+Are there server errors we don't notice?
 
 
 * Future: KPI
 
-- Nice time-based graph
-- Timeline of events
-- Could use InfluxDB (OSS I collaborated with)
+Nice time-based graph
+
+Timeline of events
+
+Could use InfluxDB (OSS I collaborated with)
 
 
 * Future
 
-- Workspaces 2.0
+Workspaces 2.0
 
 
 * Future: Workspaces 2.0
 
-- Create environments on-demand
-- New env, test something, destroy env
+Create environments on-demand
+
+New env, test something, destroy env
 
 
