@@ -1,9 +1,10 @@
 * To run, use go.present:
   $ go get golang.org/x/tools/present
   $ go get golang.org/x/tools/cmd/present
-  $ present
-  Open browser on http://drongar.int.kn:3999/
+  $ present -http 0.0.0.0:3999 -play=false
+  
+  Open browser on http://drongar.int.kn:3999/presentation.slide
 
 * Docs:
-	https://godoc.org/golang.org/x/tools/cmd/present
-	https://godoc.org/golang.org/x/tools/present
+  - https://godoc.org/golang.org/x/tools/cmd/present
+  - https://godoc.org/golang.org/x/tools/present
